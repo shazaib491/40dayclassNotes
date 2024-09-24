@@ -93,18 +93,20 @@ var num = 9;
 // for loop
 
 // wap to print number from 1 to 5
-let count = 1;
-while (count <= 5) {
-  console.log(count);
-  count++;
-}
-count=1;
-console.log("----------------------------------")
-do {
-  console.log(count);
-  count++;
-} while (count <= 5);
-console.log("----------------------------------")
-for(;count <=7;){
-    console.log(count);
-}
+// let count = 1;
+// while (count <= 5) {
+//   console.log(count);
+//   count++;
+// }
+// count=1;
+// console.log("----------------------------------")
+// do {
+//   console.log(count);
+//   count++;
+// } while (count <= 5);
+// console.log("----------------------------------")
+// for(;count <=7;){
+//     console.log(count);
+// }
+
+
