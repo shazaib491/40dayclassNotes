@@ -98,7 +98,7 @@
 //     return "This will not be printed";
 // }
 
-let num = [1, 2, 3, 4, 5];
+// let num = [1, 2, 3, 4, 5];
 // num=20;
 // console.log(num);
 // num=20;
@@ -109,32 +109,100 @@ let num = [1, 2, 3, 4, 5];
 // const no=12;
 
 // primtive data types and non prmitvve data types
+// 10000 ,100001,100002,100003,10004,60000,70000,80000,
+// const array = [1, 2, 3, 4, 5];
+// function map(array) {
+//   let newArray = [];
+//   for (var i = 0; i <= array.length - 1; i++) {
+//     newArray.push(array[i] * 20);
+//   }
+//   return newArray;
+// }
 
-const array = [1, 2, 3, 4, 5];
-function map(array) {
-  let newArray = [];
-  for (var i = 0; i <= array.length - 1; i++) {
-    newArray.push(array[i] * 20);
-  }
-  return newArray;
-}
-
-console.log(map(array));
+// console.log(map(array));
 
 
-let uniqueElements=[10,20,30,40,50];
+// let uniqueElements=[10,20,40,30,50];
 
-// linear search 
-function find(arr,element){
-    for(let i=0; i < uniqueElements.length; i++) {
-        if(arr[i]==element){
-            return arr[i]
-        }
+
+// // linear search 
+// function find(arr,element){
+//     for(let i=0; i < uniqueElements.length; i++) {
+//         if(arr[i]==element){
+//             return arr[i]
+//         }
+//     }
+//     return "zohaib bhai bhopali";
+// }
+
+
+// console.time("start")
+// console.log(find(uniqueElements,100))
+// console.timeEnd("start")
+
+// 
+// let arrays=[1,2,3,4,5];
+
+// console.log(arrays.map(transformedValue))
+
+// function transformedValue(element){
+//     return element*20;
+// }
+
+
+// console.log(array.map((element)=>{
+//     if(element==4){
+//         element=9;
+//     }
+//     return element;
+// }))
+
+// 10000,10001,10002
+//1000
+
+// console.log(this)
+// function starts(){
+//     console.log("start",this.name);
+// }
+
+// function run(){
+//     console.log("human is running",this.name);
+// }
+
+// 1000 this
+
+// object is a collection of key value pairs
+let user={
+    name:"zohaib",
+    age:23,
+    role:'aggression',
+    run:()=>{
+        console.log("human is running",this,user.name);//global object
+    },
+    start:function(){
+        console.log("start",this.name);//local object
     }
-    return "zohaib bhai bhopali";
 }
 
 
-console.time("start")
-console.log(find(uniqueElements,100))
-console.timeEnd("start")
+
+// let result={
+//     name:'adeeb',
+//     age:30,
+//     marks:15,
+//     start:starts,
+// }
+
+user.start();
+user.run();
+// result.start();
+
+
+
+
+
+// console.log(user['name']);
+
+// for(let key in user){
+//     console.log(user[key]);
+// }
