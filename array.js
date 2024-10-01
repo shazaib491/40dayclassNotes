@@ -167,34 +167,33 @@
 
 // function run(){
 //     console.log("human is running",this.name);
+//     this.start();
 // }
 
-// 1000 this
+// // 1000 this
 
-// object is a collection of key value pairs
-let user={
-    name:"zohaib",
-    age:23,
-    role:'aggression',
-    run:()=>{
-        console.log("human is running",this,user.name);//global object
-    },
-    start:function(){
-        console.log("start",this.name);//local object
-    }
-}
-
-
-
-// let result={
-//     name:'adeeb',
-//     age:30,
-//     marks:15,
-//     start:starts,
+// // object is a collection of key value pairs
+// let user={
+//     name:"zohaib",
+//     age:23,
+//     role:'aggression',
+//     run:run,
+//     start:starts
 // }
 
-user.start();
-user.run();
+// user.run();
+
+
+
+// // let result={
+// //     name:'adeeb',
+// //     age:30,
+// //     marks:15,
+// //     start:starts,
+// // }
+
+// user.start();
+// user.run();
 // result.start();
 
 
@@ -206,3 +205,60 @@ user.run();
 // for(let key in user){
 //     console.log(user[key]);
 // }
+
+
+// let users=[
+//     {
+//         id:1,
+//         name:'admin',
+//         email:'admin@example.com',
+//         run:function(){
+//             console.log("Hello",this.id)
+//         }
+//     },
+//     {
+//         id:2,
+//         name:'zohaib',
+//         email:'zohaib@example.com',
+//         run:function (){
+//             console.log("Hello",this.id)
+//         }
+//     }
+// ]
+
+
+
+
+// let students={
+//     id:1,
+//     name:'sarim',
+//     email:'sarim@example.com',
+//     subjects:['maths','english'],
+//     study:function(name){
+//         this.name = name;
+//         console.log("I am studying",this.id)
+//         console.log(this.name)
+//     },
+//     go:()=>{
+//         console.log("Hello");
+//     }
+// }
+
+// students.study("ayan");
+students.go();
+
+// console.log(students.name)
+// console.log(students['email'])
+// console.log(students.subjects)
+// console.log(students.study())
+
+
+// for(let key in students){
+//     if(typeof students[key] !== 'function'){
+//     console.log(students[key]);
+//     }
+//     if(typeof students[key] === 'function'){
+//         students[key]();
+//     }
+// }
+
