@@ -23,7 +23,7 @@ let users = [
 ]
 
 // for(var i =0 ; i < users.length; i++){
-//     console.group("--------------------------------")
+//     console. ("--------------------------------")
 //     console.log(users[i].name);
 //     console.log(users[i].email);
 //     console.groupEnd("--------------------------------")

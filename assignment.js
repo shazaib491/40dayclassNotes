@@ -143,10 +143,95 @@ function findDepartments(departments){
     return depart;
 }
 
-console.log(findDepartments(emps))
+// console.log(findDepartments(emps))
 
 
-let newGroup=Object.groupBy(emps,(element)=>{
-    return element.department;  // return 'IT' or 'HR'
-})
-console.log(newGroup)
+// let newGroup=Object.groupBy(emps,(element)=>{
+//     return element.department;  // return 'IT' or 'HR'
+// })
+// console.log(newGroup)
+
+
+const user ={
+    username:'admin',
+    email:'admin@gmail.com',
+    password:'123'
+};
+
+
+// const Person = {
+//     first :"user",
+//     email:user.email,
+//     password:user.password,
+//     getFullName:function(){
+//         return this.first;
+//     }
+// }
+
+
+function Person(age,gender){
+    this.age=age;
+    this.gender=gender;
+    this.nationlity="Indian";
+    
+    //setter function 
+    this.setFullName=function(firstName,lastName){
+        if(firstName!=='spam' && firstName!==''){
+            this.first=firstName;
+            this.last=lastName;
+        }else{
+            console.log('Invalid first name');
+        }
+    }
+
+    //getter function 
+    this.getFullName=()=>{
+        return this.first+" "+this.last;
+    }
+}
+
+const date=new Date();
+
+const obj=new Object();
+
+Person.prototype.username="daud"
+Person.prototype.printuser=function(){
+    console.log(this.username);
+}
+let person =new Person(25,'Male');
+person.setFullName('Daud','khan');
+person.printuser();
+
+
+let person1=new Person(50, 'Male');
+person1.changeName=function(name){
+    this.first=name;
+}
+
+person1.changeName("admin");
+console.log(person1)
+let person2=new Person('Rashid','Khan',50, 'Male');
+
+
+
+// console.log(person);
+
+
+
+// const allUser=new Object();
+
+// allUser.username="admin";
+
+// allUser.email="admin@gmail.com";
+
+// allUser.password="123";
+
+// console.log(allUser)
+
+// shallow copy 
+// deep copy 
+// object destructuring 
+// arraw destructuring 
+
+
+// dom --> 4 

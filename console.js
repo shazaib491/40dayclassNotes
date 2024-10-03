@@ -71,3 +71,40 @@
 
 // console.log(typeof 1.20)
 
+
+console.log("Hello world");
+
+console.info("hello world");
+
+console.warn("Hello World");
+
+console.clear();
+
+console.error("Error: Something went wrong");
+
+console.group('starting');
+console.log("Hello World")
+console.log("Hello World")
+console.log("Hello World")
+console.log("Hello World")
+console.log("Hello World")
+console.groupEnd();
+
+
+console.group('group');
+console.log("Hello World")
+console.log("Hello World")
+console.log("Hello World")
+console.log("Hello World")
+console.log("Hello World")
+console.groupEnd();
+
+console.time("myLabel")
+for (var i = 0; i <10; i++) {
+    console.log(i);
+}
+console.timeEnd("myLabel")
+
+let array = [1,2,3,4,5];
+
+console.table(array);
