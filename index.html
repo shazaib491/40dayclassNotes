@@ -6,10 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <script  src="./assignment.js" defer async="true"></script>
+    <h1 id="demo">Hello World</h1>
+    <button onclick="changeIdName()">click</button>
+    <!-- <script  src="./assignment.js" defer async="true"></script> -->
     <!-- internal stylesheet -->
     <script  type="text/javascript" >
-        console.log("Goto hell")
+        let demoId=document.getElementById("demo");
+        // console.log(demoId.textContent)
+        // demoId.textContent="Hello Universe!"
+        // demoId.innerHTML="<p>Hello World!</p>"
+
+        function changeIdName(){
+            demoId.innerText="Hello Universe!";
+        }
     </script>
 </body>
 </html>

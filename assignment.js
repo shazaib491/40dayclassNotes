@@ -303,17 +303,71 @@ arr2[5][0] = 100;
 
 // console.log(array[3])
 
-const [one,second,,,...zohaib]=[1,2,3,4,5];
-console.log(one);
-console.log(second);
+// const [one,second,...zohaib]=[1,2,3,4,5];
+// console.log(one);
+// console.log(second);
 
-console.log(zohaib);
+// console.log(zohaib);
 
 
-const obj={name:'admin',email:'admin@example.com',password:'admin'}
+// const obj={name:'admin',email:'admin@example.com',password:'admin'}
 
-const {name:nm,email:em,...rest}=obj;
+// const {name:nm,email:em,...rest}=obj;
 
-console.log(nm)
-console.log(em)
-console.log(rest)
+// console.log(nm)
+// console.log(em)
+// console.log(rest)
+
+// function create(...rem){
+//     console.log(rem)
+// }
+
+// create(1,2,3,4,5);
+
+
+// let array=[
+//     {name:'John',age:30,department:'IT'},
+//     {name:'Jane',age:28,department:'HR'},
+//     {name:'Bob',age:35,department:'IT'}
+// ]
+
+// let noArr=[1,2,3,[1,2,3]]
+
+// let noSarr=[...noArr];
+
+// noSarr[3][2]=199;
+
+// console.log(noArr)
+
+// console.log(noSarr)
+
+// const newArr=structuredClone(array)
+// newArr[0].name='John Papa';
+// console.log(newArr)
+// console.log(array)
+
+let array=[
+    {name:'John',age:30,department:'IT'},
+    {name:'Jane',age:28,department:'HR'},
+    {name:'Bob',age:35,department:'IT'}
+]
+
+let [{name:fnm,age,department},...rest]=array;
+
+
+console.log(fnm,rest)
+
+
+let arrObj={
+    id:1,
+    name:'John',
+    label:{
+        name:'John',
+        email:'John@example.com'
+    }
+}
+
+
+let {id,name,label:{name:lnm,email:lem}}=arrObj;
+
+console.log(lnm,lem)
