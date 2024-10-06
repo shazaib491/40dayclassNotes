@@ -62,6 +62,8 @@
 // console.log(elementSelector,"by their selector name")
 
 // using query selector =================================
-let elementById=document.querySelectorAll("h1");
+// let elementById=document.querySelectorAll("h1");
 
-console.log(elementById)
+// console.log(elementById)
+
+
