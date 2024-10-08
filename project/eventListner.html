@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dem">
+        <div id="demo">
+            <h1>goto hello</h1>
+            <div id="demo2">
+                hello friends
+            </div>        
+        </div>
+    </div>
+   
+
+    <script>
+
+         // for demoid one 
+         let demid=document.getElementById("dem");
+        demid.addEventListener('click',function(event){
+            console.log(event,'1');
+            event.stopPropagation(); // stop the propagation of the event to parent div
+        })
+
+        // for demoid one 
+        let demoid=document.getElementById("demo");
+        demoid.addEventListener('click',function(event){
+            console.log(event,'2');
+            event.stopPropagation(); // stop the propagation of the event to parent div
+        })
+
+        //for demoid2
+        let demo2id=document.getElementById("demo2");
+        demo2id.addEventListener('click',function(event){
+            console.log(event,'3');
+            event.stopPropagation(); // stop the propagation of the event to parent div
+        })
+    </script>
+</body>
+</html>
