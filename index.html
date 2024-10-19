@@ -17,7 +17,7 @@
     >
       Hello World
     </h1>
-    <button onclick="changeIdName()">click</button>
+    <!-- <button onclick="changeIdName()">click</button>
     <img src="./images/pic_bulboff.gif" onclick="changeBulbColor()" id="builbId" alt="no image">
     <h1 class="secret">Hello Daud D&D Company</h1>
     <h1 class="secret">Ayan Khan KTS</h1>
@@ -34,8 +34,19 @@
     <h1 class="secret">Ayan Khan KTS</h1>
     <h1 class="secret">Ayan Khan KTS</h1>
     <h1 class="secret">Ayan Khan KTS</h1>
-    <h1 class="secret">Ayan Khan KTS</h1>
-    <script src="./dom.js" defer async="true"></script>
+    <h1 class="secret">Ayan Khan KTS</h1> -->
+
+    <button name="admin" onclick="callme(this)">
+      click
+    </button>
+
+
+    <script>
+      function callme(event){
+        console.log("call me",event)
+      }
+    </script>
+    <script src="./wind.js" defer async="true"></script>
     <!-- internal stylesheet -->
     <!-- <script  type="text/javascript" >
         let demoId=document.getElementById("demo");
