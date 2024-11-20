@@ -15,6 +15,9 @@
     <p id="pic-info"></p>
     <p id="map-link"></p>
 
+    <!-- create an input files that should take file from user  -->
+    <input type="file" id="file-input" />
+
     <script>
       // Our code goes here
       document.getElementById("the-img").onclick = function () {
@@ -72,6 +75,16 @@
 
         return dd;
       }
+
+      // based on the input file, we will get the file and display it
+      document.getElementById("file-input").onchange = function (e) {
+        var file = e.target.files[0];
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById("the-img").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      };
     </script>
   </body>
 </html>
