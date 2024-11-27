@@ -1,32 +1,60 @@
-let str = "to the new to moon";
-// ["moon", "new", "the", "to", "to"]
-let splittedStr = str.split(" ").sort();
+let array=[1,2,3,4,5];
 
-let maxCount = 0;
-let mostFrequentWord = "";
-let currentWord = splittedStr[0];
-let currentCount = 1;
+// function searchElement(element,index,array){
+//     return element===3;
+// }
 
-for (let i = 1; i < splittedStr.length; i++) {
-    console.log(splittedStr[i], currentWord, splittedStr[i] === currentWord);
-    // to == to  => true
-    if (splittedStr[i] === currentWord) {
-        currentCount++;
-    } else {
-        // 1 > 1 => false
-        if (currentCount > maxCount) {
-            maxCount = currentCount;// 1
-            mostFrequentWord = currentWord; // moon 
-        }
-        currentWord = splittedStr[i]; // to
-        currentCount = 1; // 1 
-    }
-}
+// first class function 
+// let findElement=function(element,index,array){
+//     return element===3;
+// }
 
-// Check the last word
-if (currentCount > maxCount) {
-    maxCount = currentCount;
-    mostFrequentWord = currentWord;
-}
+// let findElementUsingArrow=(element,index,array)=>{
+//     console.log(element,index,array);
+//     // if(element===3){
+//     //     return element
+//     // }
+// }
 
-console.log("The most frequent word is:", mostFrequentWord, "with a count of:", maxCount);
+// array.find(findElementUsingArrow)
+
+// method to find element in an array
+
+// for(let i=0;i<array.length;i++){
+//     if(array[i]===3){
+//         console.log(array[i]);
+//     }
+// }
+// let str="hello warld"
+
+// for(let letter of str){
+//     if(letter==='a'){
+//         console.log(letter);
+//     }
+// }
+
+// find index 
+
+    
+// let printElement = (element,index,array)=>console.log(element,index,array);
+
+// array.forEach((element,index,array)=>console.log(element,index,array))
+
+// let newArray=array.map((element,index,array)=>{
+//     return index*2;
+// });
+
+// console.log(newArray);
+
+// let index=array.findIndex((element,index,array)=>{
+//     return element===3;
+// })
+
+// console.log(index);
+
+
+let newArray=array.filter((element,index,array)=>{
+    return element>2;
+})
+
+console.log(newArray)
