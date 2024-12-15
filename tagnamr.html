@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learning DOM</h1>
+    <p>new Text1</p>
+<div>sdbfsdbfkbs</div>
+<div>sdbfsdbfkbsAtif</div>
+    <p>old Text4</p>
+    <p>new3 Text5</p>
+    <p>new Text6</p>
+    <script>
+   let tagElement = document.getElementsByTagName("div");
+   console.log(tagElement);
+      for (let element of tagElement) {
+        if (element.textContent.includes("Atif")) {
+          //create a new element of div
+          const newElement = document.createElement("div");
+          newElement.textContent = "New text content";
+          //appending the new element in those content which has 3 substring
+          element.appendChild(newElement);
+        }
+      }
+    </script>
+  </body>
+</html>

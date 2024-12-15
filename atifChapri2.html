@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learning DOM</h1>
+    <p id="demo">new Text</p>
+    <script>
+      let paragraphId = document.getElementById("demo");
+      // paragraphId.innerHTML+="<p> Hello, world! </p>";
+      let element=document.createElement("p");
+      element.textContent = "Hello, world"
+      element.style.color="red";
+      paragraphId.appendChild(element);
+    </script>
+  </body>
+</html>

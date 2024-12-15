@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learning DOM</h1>
+    <p id="demo">new Text</p>
+    <button onclick="changeColor()">change text</button>
+    <script>
+      let paragraphId = document.getElementById("demo");
+      //element node
+      console.log(paragraphId.textContent);
+      // paragraphId.textContent="new content"
+      let cssProperty = {
+        color: "red",
+        bg: "black",
+        border: "1px solid yellow",
+      };
+      setColor(paragraphId, cssProperty);
+      function setColor(ElementNode, object) {
+        // ElementNode.style.color = object.color;
+        // ElementNode.style.background = object.bg;
+        // ElementNode.style.border = object.border;
+        // ElementNode.setAttribute("style", "color: red; background: black; border: 1px solid yellow;");
+        ElementNode.setAttribute(
+          "style",
+          `color: ${object.color}; background: ${object.bg}; border: ${object.border};`
+        );
+      }
+
+      function changeColor(){
+        let newCssProperty = {
+        color: "yellow",
+        bg: "green",
+        border: "1px solid black",
+      };
+      setColor(paragraphId,newCssProperty);
+      }
+    </script>
+  </body>
+</html>
